@@ -1,0 +1,15 @@
+name: Go Test
+
+on: [push, pull_request]
+
+jobs:
+
+  helloci-build:
+    name: Test with go
+    runs-on: [ubuntu-latest]
+    environment:
+      name: helloci
+    steps:
+      - name: Tidy
+        run: |
+          echo ${{secrets.USER_NAME}}
