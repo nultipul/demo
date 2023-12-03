@@ -8,7 +8,7 @@ jobs:
     name: Test with go
     runs-on: [ubuntu-latest]
     environment:
-      name: helloci
+      name: secrets
     steps:
       - name: Tidy
         run: |
